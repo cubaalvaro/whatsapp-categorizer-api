@@ -1,0 +1,17 @@
+{
+  "name": "whatsapp-categorizer-api",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@supabase/supabase-js": "^2.55.0",
+    "@vercel/node": "^5.3.13"
+  },
+  "devDependencies": {},
+  "description": ""
+}
