@@ -73,6 +73,11 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
   }
 }
 
+// borrar luego
+if (!/^wss?:\/\//.test(process.env.MCP_WS_URL || "")) {
+  return res.status(500).json({ error: "bad_mcp_ws_url", got: process.env.MCP_WS_URL || null });
+}
+
 function callMCP(
   wsUrl: string,
   tool: string,
